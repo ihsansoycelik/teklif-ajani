@@ -1,0 +1,10 @@
+kod,hizmet,birim,birim_fiyat_kdv_haric,indirim_uygun,bakim_periyodu_ay
+MONT9,Klima montajı 9.000-12.000 BTU,adet,1800,evet,
+MONT18,Klima montajı 18.000-24.000 BTU,adet,2400,evet,
+SOKUM,Klima sökümü,adet,700,evet,
+BAKIM,Klima periyodik bakım ve temizlik,adet,650,evet,12
+GAZ,Gaz dolumu (R32/R410),adet,1500,hayir,
+BORU,Ek bakır boru (montajda 3 m dahil),metre,350,hayir,
+KOMBI,Kombi yıllık bakımı,adet,900,hayir,12
+ARIZA,Arıza tespiti,adet,500,hayir,
+YOL,Servis/yol bedeli,adet,400,hayir,
