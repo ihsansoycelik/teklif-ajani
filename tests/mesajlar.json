@@ -1,0 +1,206 @@
+[
+ {
+  "id": "M01",
+  "mesaj": "Merhaba, salona 12000 btu klima taktıracağım, montaj ne kadar?",
+  "beklenen_kalemler": [
+   {
+    "kod": "MONT9",
+    "adet": 1
+   }
+  ],
+  "notlar": [],
+  "beklenen": {
+   "ara_toplam_kdv_haric": 2200.0,
+   "kdv": 440.0,
+   "genel_toplam": 2640.0,
+   "yol": 400.0
+  },
+  "beklenen_davranis": "teklif_ver"
+ },
+ {
+  "id": "M02",
+  "mesaj": "Slm 3 odaya klima bakımı yaptırmak istiyorum, fiyat atar mısınız",
+  "beklenen_kalemler": [
+   {
+    "kod": "BAKIM",
+    "adet": 3
+   }
+  ],
+  "notlar": [],
+  "beklenen": {
+   "ara_toplam_kdv_haric": 2155.0,
+   "kdv": 431.0,
+   "genel_toplam": 2586.0,
+   "yol": 400.0
+  },
+  "beklenen_davranis": "teklif_ver"
+ },
+ {
+  "id": "M03",
+  "mesaj": "İyi günler. Eski evden 2 klimayı söküp yeni eve takacağız, ikisi de 9 bin btu. Yeni evde biri için 5 metre boru lazım olabilir.",
+  "beklenen_kalemler": [
+   {
+    "kod": "SOKUM",
+    "adet": 2
+   },
+   {
+    "kod": "MONT9",
+    "adet": 2
+   },
+   {
+    "kod": "BORU",
+    "adet": 2
+   }
+  ],
+  "notlar": [
+   "Boru ihtiyacı 'olabilir' denmiş; keşifte kesinleşir (montajda 3 m dahil, 5 m için 2 m ek)."
+  ],
+  "beklenen": {
+   "ara_toplam_kdv_haric": 5700.0,
+   "kdv": 1140.0,
+   "genel_toplam": 6840.0,
+   "yol": 0.0
+  },
+  "beklenen_davranis": "teklif_ver"
+ },
+ {
+  "id": "M04",
+  "mesaj": "klimam soğutmuyor gaz bitmiş olabilir bakar mısınız",
+  "beklenen_kalemler": [
+   {
+    "kod": "ARIZA",
+    "adet": 1
+   }
+  ],
+  "notlar": [
+   "Gaz dolumu arıza tespitinden sonra gerekirse eklenir; peşin fiyata dahil edilmez."
+  ],
+  "beklenen": {
+   "ara_toplam_kdv_haric": 900.0,
+   "kdv": 180.0,
+   "genel_toplam": 1080.0,
+   "yol": 400.0
+  },
+  "beklenen_davranis": "teklif_ver"
+ },
+ {
+  "id": "M05",
+  "mesaj": "Kombi bakımı + 1 adet klima bakımı aynı gün olur mu? Bornova'dayım",
+  "beklenen_kalemler": [
+   {
+    "kod": "KOMBI",
+    "adet": 1
+   },
+   {
+    "kod": "BAKIM",
+    "adet": 1
+   }
+  ],
+  "notlar": [],
+  "beklenen": {
+   "ara_toplam_kdv_haric": 1950.0,
+   "kdv": 390.0,
+   "genel_toplam": 2340.0,
+   "yol": 400.0
+  },
+  "beklenen_davranis": "teklif_ver"
+ },
+ {
+  "id": "M06",
+  "mesaj": "Ofisimize 4 tane 24 bin btu klima montajı",
+  "beklenen_kalemler": [
+   {
+    "kod": "MONT18",
+    "adet": 4
+   }
+  ],
+  "notlar": [],
+  "beklenen": {
+   "ara_toplam_kdv_haric": 8640.0,
+   "kdv": 1728.0,
+   "genel_toplam": 10368.0,
+   "yol": 0.0
+  },
+  "beklenen_davranis": "teklif_ver"
+ },
+ {
+  "id": "M07",
+  "mesaj": "abi kaç klima var bilmiyorum ev sahibi söyledi bakım lazım diye",
+  "beklenen_kalemler": [],
+  "notlar": [
+   "Cihaz sayısı bilinmiyor: tahmin yapılmaz, soru sorulur."
+  ],
+  "beklenen": null,
+  "beklenen_davranis": "soru_sor"
+ },
+ {
+  "id": "M08",
+  "mesaj": "Yazlıkta 1 klima söküm ve depoya teslim, ayrıca sizden çatı tamiri yapıyor musunuz?",
+  "beklenen_kalemler": [
+   {
+    "kod": "SOKUM",
+    "adet": 1
+   }
+  ],
+  "notlar": [
+   "Çatı tamiri fiyat listesinde yok: liste dışı, teklif verilmez."
+  ],
+  "beklenen": {
+   "ara_toplam_kdv_haric": 1100.0,
+   "kdv": 220.0,
+   "genel_toplam": 1320.0,
+   "yol": 400.0
+  },
+  "beklenen_davranis": "teklif_ver"
+ },
+ {
+  "id": "M09",
+  "mesaj": "Merhaba 18000 btu montaj + 4 metre ek boru, bir de gaz dolumu istiyorum çünkü cihaz ikinci el",
+  "beklenen_kalemler": [
+   {
+    "kod": "MONT18",
+    "adet": 1
+   },
+   {
+    "kod": "BORU",
+    "adet": 4
+   },
+   {
+    "kod": "GAZ",
+    "adet": 1
+   }
+  ],
+  "notlar": [
+   "'4 metre ek boru' ek metre olarak alındı (montajdaki 3 m dahil hariç)."
+  ],
+  "beklenen": {
+   "ara_toplam_kdv_haric": 5300.0,
+   "kdv": 1060.0,
+   "genel_toplam": 6360.0,
+   "yol": 0.0
+  },
+  "beklenen_davranis": "teklif_ver"
+ },
+ {
+  "id": "M10",
+  "mesaj": "selam 2 klima bakim 1 kombi bakim karsiyaka",
+  "beklenen_kalemler": [
+   {
+    "kod": "BAKIM",
+    "adet": 2
+   },
+   {
+    "kod": "KOMBI",
+    "adet": 1
+   }
+  ],
+  "notlar": [],
+  "beklenen": {
+   "ara_toplam_kdv_haric": 2600.0,
+   "kdv": 520.0,
+   "genel_toplam": 3120.0,
+   "yol": 400.0
+  },
+  "beklenen_davranis": "teklif_ver"
+ }
+]

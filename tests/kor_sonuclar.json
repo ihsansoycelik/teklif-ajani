@@ -1,0 +1,233 @@
+{
+  "test": "kör test (tek geçiş, beklenen cevap yok)",
+  "tarih": "2026-11-10",
+  "kaynak": "tests/kor_mesajlar.json",
+  "yontem": "Her mesaj SKILL.md kurallarıyla bir kez yorumlandı; iş kartı elle yazıldı, para hesabı scripts/teklif_hesapla.py ile yapıldı. Düzeltme turu yok.",
+  "sonuclar": [
+    {
+      "id": "B1",
+      "mesaj": "Yeni binaya 3 tane 9000 btu klima montajı istiyoruz.",
+      "is_karti": {
+        "musteri_adi": "",
+        "ilce": "",
+        "kalemler": [
+          {
+            "kod": "MONT9",
+            "adet": 3
+          }
+        ],
+        "belirsizlikler": [
+          "Yeni bina; dış ünite konumu ve elektrik hattı keşifte kontrol edilir."
+        ],
+        "sorulacak_sorular": []
+      },
+      "davranis": "teklif_ver",
+      "hesap": {
+        "ara_toplam_kdv_haric": 4860.0,
+        "kdv": 972.0,
+        "genel_toplam": 5832.0,
+        "yol": 0.0,
+        "adet_indirimi_uygulandi": true
+      },
+      "gerekce": "3 adet 9000 BTU montaj; MONT9 aralığında, adet 3."
+    },
+    {
+      "id": "B2",
+      "mesaj": "1 klima sökülecek, bir de 1 tanesine bakım yapılacak.",
+      "is_karti": {
+        "musteri_adi": "",
+        "ilce": "",
+        "kalemler": [
+          {
+            "kod": "SOKUM",
+            "adet": 1
+          },
+          {
+            "kod": "BAKIM",
+            "adet": 1
+          }
+        ],
+        "belirsizlikler": [
+          "Sökülen klimanın taşınması/nakliyesi fiyat listesinde yok; gerekirse ayrıca değerlendirilir."
+        ],
+        "sorulacak_sorular": []
+      },
+      "davranis": "teklif_ver",
+      "hesap": {
+        "ara_toplam_kdv_haric": 1750.0,
+        "kdv": 350.0,
+        "genel_toplam": 2100.0,
+        "yol": 400.0,
+        "adet_indirimi_uygulandi": false
+      },
+      "gerekce": "1 söküm + 1 bakım; iki kalem, adetler 1."
+    },
+    {
+      "id": "B3",
+      "mesaj": "Kombi bakımı ve arıza tespiti lazım, petek temizliği de yapıyor musunuz?",
+      "is_karti": {
+        "musteri_adi": "",
+        "ilce": "",
+        "kalemler": [
+          {
+            "kod": "KOMBI",
+            "adet": 1
+          },
+          {
+            "kod": "ARIZA",
+            "adet": 1
+          }
+        ],
+        "belirsizlikler": [
+          "Petek temizliği fiyat listesinde yok: liste dışı, keşif gerekli."
+        ],
+        "sorulacak_sorular": []
+      },
+      "davranis": "teklif_ver",
+      "hesap": {
+        "ara_toplam_kdv_haric": 1800.0,
+        "kdv": 360.0,
+        "genel_toplam": 2160.0,
+        "yol": 400.0,
+        "adet_indirimi_uygulandi": false
+      },
+      "gerekce": "Kombi bakımı 1 + arıza tespiti 1; petek temizliği fiyatlanmaz."
+    },
+    {
+      "id": "B4",
+      "mesaj": "2 adet 24000 btu montaj, toplam 6 metre boru lazım olacak galiba",
+      "is_karti": {
+        "musteri_adi": "",
+        "ilce": "",
+        "kalemler": [
+          {
+            "kod": "MONT18",
+            "adet": 2
+          }
+        ],
+        "belirsizlikler": [
+          "'Toplam 6 metre boru' ifadesi: iki montajda 3+3 m zaten dahil olduğu için ek boru bedeli alınmadı. Müşteri 6 metre EK boru kastediyorsa teklif 2.100 TL artar."
+        ],
+        "sorulacak_sorular": []
+      },
+      "davranis": "teklif_ver",
+      "hesap": {
+        "ara_toplam_kdv_haric": 4800.0,
+        "kdv": 960.0,
+        "genel_toplam": 5760.0,
+        "yol": 0.0,
+        "adet_indirimi_uygulandi": false
+      },
+      "gerekce": "2 adet 24000 BTU montaj. Boru 'toplam' denmiş; dahil 3 m/ünite ile 6 m karşılanıyor, ek kalem yok."
+    },
+    {
+      "id": "B5",
+      "mesaj": "evdeki 5 klimaya bakım, bir tanesine de gaz dolumu",
+      "is_karti": {
+        "musteri_adi": "",
+        "ilce": "",
+        "kalemler": [
+          {
+            "kod": "BAKIM",
+            "adet": 5
+          },
+          {
+            "kod": "GAZ",
+            "adet": 1
+          }
+        ],
+        "belirsizlikler": [
+          "Gaz dolumu sadece 1 cihaz için; hangi cihaz olduğu sahada netleşir."
+        ],
+        "sorulacak_sorular": []
+      },
+      "davranis": "teklif_ver",
+      "hesap": {
+        "ara_toplam_kdv_haric": 4425.0,
+        "kdv": 885.0,
+        "genel_toplam": 5310.0,
+        "yol": 0.0,
+        "adet_indirimi_uygulandi": true
+      },
+      "gerekce": "5 klima bakımı + 1 gaz dolumu; gaz indirim_uygun=hayir."
+    },
+    {
+      "id": "B6",
+      "mesaj": "Fiyat ne kadar?",
+      "is_karti": {
+        "musteri_adi": "",
+        "ilce": "",
+        "kalemler": [],
+        "belirsizlikler": [
+          "Hizmet türü, adet ve yer bilgisi yok."
+        ],
+        "sorulacak_sorular": [
+          "Hangi hizmet için fiyat istiyorsunuz (montaj, bakım, söküm, arıza)?",
+          "Kaç adet klima/cihaz var?",
+          "Hangi ilçe?"
+        ]
+      },
+      "davranis": "soru_sor",
+      "hesap": null,
+      "gerekce": "Mesajda iş tanımı yok; tahmin edilmez, soru sorulur."
+    },
+    {
+      "id": "B7",
+      "mesaj": "12 bin btu klimayı söküp aynı evde başka odaya takın",
+      "is_karti": {
+        "musteri_adi": "",
+        "ilce": "",
+        "kalemler": [
+          {
+            "kod": "SOKUM",
+            "adet": 1
+          },
+          {
+            "kod": "MONT9",
+            "adet": 1
+          }
+        ],
+        "belirsizlikler": [
+          "Aynı ev içinde oda değişikliği; yeni odada boru/elektrik hattı keşifte bakılır."
+        ],
+        "sorulacak_sorular": []
+      },
+      "davranis": "teklif_ver",
+      "hesap": {
+        "ara_toplam_kdv_haric": 2900.0,
+        "kdv": 580.0,
+        "genel_toplam": 3480.0,
+        "yol": 400.0,
+        "adet_indirimi_uygulandi": false
+      },
+      "gerekce": "12 bin BTU: söküm 1 + MONT9 1 (aynı cihaz taşınıyor)."
+    },
+    {
+      "id": "B8",
+      "mesaj": "2 kombi bakımı, ayrıca çamaşır makinesi tamiri de lazım",
+      "is_karti": {
+        "musteri_adi": "",
+        "ilce": "",
+        "kalemler": [
+          {
+            "kod": "KOMBI",
+            "adet": 2
+          }
+        ],
+        "belirsizlikler": [
+          "Çamaşır makinesi tamiri fiyat listesinde yok: liste dışı, keşif gerekli."
+        ],
+        "sorulacak_sorular": []
+      },
+      "davranis": "teklif_ver",
+      "hesap": {
+        "ara_toplam_kdv_haric": 2200.0,
+        "kdv": 440.0,
+        "genel_toplam": 2640.0,
+        "yol": 400.0,
+        "adet_indirimi_uygulandi": false
+      },
+      "gerekce": "2 kombi bakımı; çamaşır makinesi için fiyat verilmez."
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "_aciklama": "M01-M10 için skill mantığıyla (SKILL.md) üretilmiş iş kartları. Her mesaj tek tek okunup elle yorumlandı; fiyat listesindeki kodlara eşlendi. 'gerekce' alanı yorumun nedenini kaydeder.",
+  "kartlar": [
+    {
+      "id": "M01",
+      "musteri_adi": "",
+      "ilce": "",
+      "kalemler": [{"kod": "MONT9", "adet": 1}],
+      "belirsizlikler": ["Montaj yeri (salon) ve dış ünite konumu belirtilmemiş; keşifte netleşir."],
+      "sorulacak_sorular": [],
+      "davranis": "teklif_ver",
+      "gerekce": "12000 BTU, MONT9 aralığının (9.000-12.000) üst sınırında; tek klima, adet 1."
+    },
+    {
+      "id": "M02",
+      "musteri_adi": "",
+      "ilce": "",
+      "kalemler": [{"kod": "BAKIM", "adet": 3}],
+      "belirsizlikler": [],
+      "sorulacak_sorular": [],
+      "davranis": "teklif_ver",
+      "gerekce": "'3 oda' bakım adedi olarak okundu (oda başına 1 iç ünite)."
+    },
+    {
+      "id": "M03",
+      "musteri_adi": "",
+      "ilce": "",
+      "kalemler": [{"kod": "SOKUM", "adet": 2}, {"kod": "MONT9", "adet": 2}, {"kod": "BORU", "adet": 2}],
+      "belirsizlikler": ["Boru ihtiyacı 'olabilir' denmiş; keşifte kesinleşir.", "Montajda 3 m boru dahil olduğu için 5 m istek = 2 m ek boru."],
+      "sorulacak_sorular": [],
+      "davranis": "teklif_ver",
+      "gerekce": "2 söküm + 2 montaj (9 bin BTU) + biri için 5 m boru; 5-3=2 m ek. 'Olabilir' ifadesi teklifi durdurmaz, nota yazılır."
+    },
+    {
+      "id": "M04",
+      "musteri_adi": "",
+      "ilce": "",
+      "kalemler": [{"kod": "ARIZA", "adet": 1}],
+      "belirsizlikler": ["Gaz dolumu arıza tespitinden sonra gerekirse eklenir; peşin fiyata dahil edilmez."],
+      "sorulacak_sorular": [],
+      "davranis": "teklif_ver",
+      "gerekce": "'Soğutmuyor, gaz bitmiş olabilir' → teşhis işi. Müşteri gaz dolumu istemedi; ARIZA 1 kalemi."
+    },
+    {
+      "id": "M05",
+      "musteri_adi": "",
+      "ilce": "Bornova",
+      "kalemler": [{"kod": "KOMBI", "adet": 1}, {"kod": "BAKIM", "adet": 1}],
+      "belirsizlikler": ["Aynı gün iki iş planlanacak; randevu saatleri teyit edilmeli."],
+      "sorulacak_sorular": [],
+      "davranis": "teklif_ver",
+      "gerekce": "Kombi bakımı 1 + klima bakımı 1; ilçe Bornova."
+    },
+    {
+      "id": "M06",
+      "musteri_adi": "",
+      "ilce": "",
+      "kalemler": [{"kod": "MONT18", "adet": 4}],
+      "belirsizlikler": ["Ofis içi 4 ünite; dış ünite yeri ve elektrik hattı keşifte kontrol edilir."],
+      "sorulacak_sorular": [],
+      "davranis": "teklif_ver",
+      "gerekce": "24 bin BTU → MONT18; 4 adet."
+    },
+    {
+      "id": "M07",
+      "musteri_adi": "",
+      "ilce": "",
+      "kalemler": [],
+      "belirsizlikler": ["Cihaz sayısı ve tipi bilinmiyor; adres/ilçe de yok."],
+      "sorulacak_sorular": ["Kaç adet klima var?", "Hepsi bakım mı, arıza var mı?"],
+      "davranis": "soru_sor",
+      "gerekce": "Adet bilinmiyor; tahmin edilmez, teklif verilmez. Soru sorulur."
+    },
+    {
+      "id": "M08",
+      "musteri_adi": "",
+      "ilce": "",
+      "kalemler": [{"kod": "SOKUM", "adet": 1}],
+      "belirsizlikler": ["Çatı tamiri fiyat listesinde yok: liste dışı, keşif gerekli.", "Depoya teslim/nakliye listelenmemiş; ayrıca değerlendirilir."],
+      "sorulacak_sorular": [],
+      "davranis": "teklif_ver",
+      "gerekce": "Söküm 1 kalemi fiyatlanır; çatı tamiri için fiyat verilmez, liste dışı denir."
+    },
+    {
+      "id": "M09",
+      "musteri_adi": "",
+      "ilce": "",
+      "kalemler": [{"kod": "MONT18", "adet": 1}, {"kod": "BORU", "adet": 4}, {"kod": "GAZ", "adet": 1}],
+      "belirsizlikler": ["'4 metre ek boru' ek metre olarak alındı; montajdaki 3 m dahil değil."],
+      "sorulacak_sorular": [],
+      "davranis": "teklif_ver",
+      "gerekce": "18 bin BTU montaj 1, 4 m ek boru, açıkça istenen gaz dolumu 1."
+    },
+    {
+      "id": "M10",
+      "musteri_adi": "",
+      "ilce": "Karşıyaka",
+      "kalemler": [{"kod": "BAKIM", "adet": 2}, {"kod": "KOMBI", "adet": 1}],
+      "belirsizlikler": [],
+      "sorulacak_sorular": [],
+      "davranis": "teklif_ver",
+      "gerekce": "Yazım hatalı mesaj: '2 klima bakim 1 kombi bakim' → BAKIM 2 + KOMBI 1."
+    }
+  ]
+}
